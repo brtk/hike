@@ -1,0 +1,7 @@
+# Camera originals: a temp import folder, emptied by hand once a trip is done.
+# Only the resized, metadata-stripped copies in trips/*/photos/day-N/ are committed.
+# The folder itself is kept so it never has to be recreated.
+local-pics/*
+!local-pics/.gitkeep
+
+__pycache__/

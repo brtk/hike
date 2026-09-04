@@ -1,0 +1,128 @@
+:root {
+    --content-width: 800px;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* Centered column; the map and photos share its width. */
+.page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.page h1,
+.page h2 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.notes {
+    text-align: justify;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+/* Photo gallery, one image per row at the width of the map. */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.photo {
+    margin: 0;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.photo figcaption {
+    padding-top: 0.35rem;
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Leaflet divIcon wrapper: strip the default white box behind the arrow SVG. */
+.photo-arrow {
+    background: none;
+    border: none;
+}
+
+/* Reset-zoom button: match the sizing Leaflet gives its own zoom controls. */
+.leaflet-bar a.reset-zoom {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Hand-written caption, above the generated time/altitude line. */
+.photo .photo-caption {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: #222;
+    text-align: center;
+}
+
+/* Day separator in the photo gallery. */
+.day-heading {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #444;
+}
+
+.day-heading:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Optional per-day paragraph, between the day heading and its photos. */
+.day-blurb {
+    margin: 0.5rem 0 0;
+    text-align: justify;
+}
+
+/* Landing page: one line per trip, hand-edited in index.html. */
+.trip-list {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+}
+
+.trip-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-list a {
+    font-size: 1.15rem;
+    color: #c0392b;
+    text-decoration: none;
+}
+
+.trip-list a:hover {
+    text-decoration: underline;
+}
+
+.trip-note {
+    display: block;
+    font-size: 0.875rem;
+    color: #666;
+}
