@@ -1,0 +1,3 @@
+{
+  "_example": "Copy a \"file\" value from photos.json as the key, caption as the value, e.g. \"day-1/IMG_0001.JPEG\": \"Crossing the river\". Delete this line once you add one."
+}

@@ -1,0 +1,14 @@
+{
+  "intro": [
+    "Short intro, a few lines. Links are written as ",
+    "[label](https://example.com)."
+  ],
+  "notes": [
+    "Longer notes below the map. This value is a list only so long ",
+    "text can be wrapped in the source; the entries are joined as ",
+    "written.",
+    "\n\n",
+    "A blank line starts a new paragraph."
+  ],
+  "days": {}
+}
